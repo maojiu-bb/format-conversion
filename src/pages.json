@@ -18,7 +18,7 @@
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#19e627",
     "backgroundColor": "#F8F8F8"
   },
   // 配置tabbar
