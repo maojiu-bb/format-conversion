@@ -48,40 +48,5 @@
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
-.home {
-  .title {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  .main {
-    margin: 100px auto;
-    margin-top: 60px;
-    width: 380px;
-    height: 450px;
-    display: flex;
-    flex-wrap: wrap;
-    .item {
-      width: 120px;
-      height: 140px;
-      background-color: #f0f0f0;
-      margin-right: 10px;
-      border-radius: 10px;
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-      .img {
-        width: 80px;
-        height: 80px;
-        margin-left: 20px;
-        margin-top: 10px;
-      }
-      .info {
-        text-align: center;
-        margin-top: 10px;
-      }
-    }
-  }
-}
+@import '@/styles/home.scss';
 </style>
