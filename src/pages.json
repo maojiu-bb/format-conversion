@@ -13,6 +13,13 @@
       "style": {
         "navigationBarTitleText": "我的"
       }
+    },
+    // 作者
+    {
+      "path": "pages/author/index",
+      "style": {
+        "navigationBarTitleText": "作者"
+      }
     }
   ],
   "globalStyle": {

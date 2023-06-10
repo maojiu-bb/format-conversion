@@ -10,7 +10,12 @@
       <view class="name">未登录</view>
     </view>
     <view class="func">
-      <view class="func-item" v-for="(item, index) in funcItems" :key="index">
+      <view
+        class="func-item"
+        v-for="item in funcItems"
+        :key="item.id"
+        @click="funcitemHandle(item.id)"
+      >
         <image class="left-icon" :src="item.leftIcon" mode="scaleToFill" />
         <text>{{ item.text }}</text>
         <image class="right-icon" :src="item.rightIcon" mode="scaleToFill" />
@@ -23,6 +28,7 @@
 import { ref } from 'vue'
 
 type Titem = {
+  id: number
   text: string
   leftIcon: string
   rightIcon: string
@@ -30,21 +36,32 @@ type Titem = {
 
 const funcItems = ref<Titem[]>([
   {
+    id: 1,
     text: '作者',
     leftIcon: '/static/images/author.png',
     rightIcon: '/static/images/right.png'
   },
   {
+    id: 2,
     text: '关于',
     leftIcon: '/static/images/about.png',
     rightIcon: '/static/images/right.png'
   },
   {
+    id: 3,
     text: '退出',
     leftIcon: '/static/images/tuichu.png',
     rightIcon: '/static/images/right.png'
   }
 ])
+
+const funcitemHandle = (id: number) => {
+  if (id === 1) {
+    uni.navigateTo({
+      url: '../author/index'
+    })
+  }
+}
 </script>
 
 <style scoped lang="scss">
