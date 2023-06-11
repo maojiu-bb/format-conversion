@@ -21,6 +21,8 @@
         <image class="right-icon" :src="item.rightIcon" mode="scaleToFill" />
       </view>
     </view>
+    <view class="about" v-show="isShowAbout">about</view>
+    <view class="logout" v-show="isShowLogout">logout</view>
   </view>
 </template>
 
@@ -55,11 +57,22 @@ const funcItems = ref<Titem[]>([
   }
 ])
 
+const isShowAbout = ref<boolean>(false)
+const isShowLogout = ref<boolean>(false)
+
 const funcitemHandle = (id: number) => {
-  if (id === 1) {
-    uni.navigateTo({
-      url: '../author/index'
-    })
+  switch (id) {
+    case 1:
+      uni.navigateTo({
+        url: '../author/index'
+      })
+      break
+    case 2:
+      isShowAbout.value = true
+      break
+    case 3:
+      isShowLogout.value = true
+      break
   }
 }
 </script>
