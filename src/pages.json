@@ -20,6 +20,13 @@
       "style": {
         "navigationBarTitleText": "作者"
       }
+    },
+    // 用户信息
+    {
+      "path": "pages/userInfo/index",
+      "style": {
+        "navigationBarTitleText": "用户信息"
+      }
     }
   ],
   "globalStyle": {
