@@ -23,6 +23,7 @@
     </view>
     <view class="about" v-show="isShowAbout">about</view>
     <view class="logout" v-show="isShowLogout">logout</view>
+    <view class="mask"></view>
   </view>
 </template>
 
