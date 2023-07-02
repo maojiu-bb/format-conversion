@@ -21,11 +21,10 @@
         "navigationBarTitleText": "作者"
       }
     },
-    // 用户信息
     {
-      "path": "pages/userInfo/index",
+      "path": "pages/fileList/index",
       "style": {
-        "navigationBarTitleText": "用户信息"
+        "navigationBarTitleText": "已转换文件"
       }
     }
   ],

@@ -1,0 +1,44 @@
+.file-list {
+  background-color: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .file-item {
+    width: 350px;
+    height: 80px;
+    background-color: #fff;
+    margin: 0 auto 20px;
+    border-radius: 16px;
+    display: flex;
+    image {
+      width: 60px;
+      height: 60px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    .file-name {
+      width: 160px;
+      line-height: 80px;
+      margin-left: 15px;
+      font-size: 18px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    button {
+      width: 80px;
+      height: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #19e627;
+    }
+  }
+  .nomore {
+    text-align: center;
+    padding-bottom: 50px;
+    text {
+      color: #666;
+    }
+  }
+}
